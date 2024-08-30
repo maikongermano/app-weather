@@ -140,7 +140,7 @@ export default function Home() {
         <Center>
           <VStack spacing={8} w="100%" maxW="2xl">
             <Box
-              bg={useColorModeValue("gray.200", "gray.600")}
+              bg={useColorModeValue("blue.200", "blue.600")}
               p={[6, 8, 10]}
               rounded="lg"
               shadow="lg"
@@ -164,7 +164,7 @@ export default function Home() {
               {days.map((day, index) => (
                 <Box
                   key={index}
-                  bg={useColorModeValue("gray.200", "gray.600")}
+                  bg={useColorModeValue("blue.200", "blue.600")}
                   p={[3, 4, 5]}
                   rounded="md"
                   textAlign="center"
