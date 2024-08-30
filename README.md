@@ -6,7 +6,7 @@
 Este repositório é referente ao desafio de clima tempo.
 
 # Proposta
-A ideia é obter o clima tempo a partir de um consumo de API, utilizado a https://openweathermap.org/api.
+A ideia é obter o clima tempo a partir de um consumo de API, utilizando a https://openweathermap.org/api.
 
 # Tecnologias Utilizadas 🚀
 NextJS ⚛️ <br />
