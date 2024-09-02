@@ -6,6 +6,9 @@ interface WeatherState {
   description: string;
   humidity: number | null;
   windSpeed: number | null;
+  pressure: string;
+  sunrise: string;
+  sunset: string;
   setWeather: (data: Partial<WeatherState>) => void;
 }
 
@@ -15,6 +18,9 @@ const useWeatherStore = create<WeatherState>((set) => ({
   description: "",
   humidity: null,
   windSpeed: null,
+  pressure: "",
+  sunrise: "",
+  sunset: "",
   setWeather: (data) => set((state) => ({ ...state, ...data })),
 }));
 
