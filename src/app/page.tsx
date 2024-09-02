@@ -23,6 +23,7 @@ import WeatherCard from "./components/WeatherCard";
 import WeatherDetails from "./components/WeatherDetails";
 import useWeatherStore from "./hooks/useWeatherStore";
 import { fetchWeather } from "./services/api";
+import { WeatherIconFactory } from "./utils/WeatherIconFactory";
 
 export default function Home() {
   const [city, setCity] = useState<string>("Apucarana");
@@ -75,10 +76,7 @@ export default function Home() {
   const days = getNext7Days();
 
   const getWeatherIcon = (description: string) => {
-    if (description.includes("sun")) return "sunny";
-    if (description.includes("cloud")) return "cloudy";
-    if (description.includes("rain")) return "rainy";
-    return "partly_cloudy";
+    return WeatherIconFactory.createIcon(description);
   };
 
   return (
